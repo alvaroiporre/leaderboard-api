@@ -13,7 +13,7 @@ const getScore = async () => {
       data = json.result;
       scoresList.innerHTML = '';
       data.forEach((dat, index) => {
-        scoresList.innerHTML += `<li class="li-${index % 2}"><p>${dat.user}: ${dat.score}</p></li>`;
+        scoresList.innerHTML += `<li class="li-${index % 2}"><p><b>${dat.user}</b> : ${dat.score}</p></li>`;
       });
     });
 };
