@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h1><b>To Do List Project</b></h1>
+  <h1><b>Leaderboard Project with API</b></h1>
 
 </div>
 
@@ -30,7 +30,7 @@
 
 # 📖 To Do List <a name="about-project"></a>
 
-**To Do List** is a is a brief sample of the work done in my career as a software developer.
+**Leaderboard** is a is a brief sample of the work done in my career as a software developer.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,7 +41,10 @@ Html, Css, JavaScript and Webpack.
 
 ### Key Features <a name="key-features"></a>
 
-- **[Webpack]**
+- **Webpack**
+- **API**
+- **ES6**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -50,7 +53,7 @@ Html, Css, JavaScript and Webpack.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://alvaroiporre.github.io/ToDoList/dist/)
+- coming soon
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -65,7 +68,7 @@ Install Git
 
 Clone this repository to your desired folder:
 
-```git clone https://github.com/alvaroiporre/ToDoList```
+```git clone https://github.com/alvaroiporre/leaderboard-api```
 ### Install
 ```cd ToDolist```
 ### Usage
@@ -90,7 +93,6 @@ To run Jest tests use: npm run test
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add Functionality**
-- [ ] **Add Drag and Drop**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
