@@ -1,90 +1,88 @@
 body {
-    background-color: rgb(19, 18, 18);
-    color: rgb(214, 219, 219);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 25px;
+  background-color: rgb(19, 18, 18);
+  color: rgb(214, 219, 219);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 25px;
 }
+
 li {
-    list-style: none;
+  list-style: none;
+  padding: 10px;
 }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .flex-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
 }
 
-.score-list{
-    padding: 0;
-    border: 2px solid whitesmoke;
-    width: 90%;
+.score-list {
+  padding: 0;
+  border: 2px solid whitesmoke;
+  width: 90%;
 }
 
 .button {
-    background-color: aliceblue;
-    text-decoration: none;
-    padding: 5px 20px;
-    border: none;
-    color: black;
-    font-size: medium;
+  background-color: aliceblue;
+  text-decoration: none;
+  padding: 5px 20px;
+  border: none;
+  color: black;
+  font-size: medium;
 }
 
 .button-form {
-    margin-right: 0;
-    width: 200px;
-}
-
-li {
-    padding: 10px;
+  margin-right: 0;
+  width: 200px;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .li-0 {
-    background-color: rgb(148, 145, 142);
-    color: rgb(226, 233, 239);
+  background-color: rgb(148, 145, 142);
+  color: rgb(226, 233, 239);
 }
 
 .li-1 {
-    background-color: rgb(233, 230, 227);
-    color: rgb(29, 29, 29);
+  background-color: rgb(233, 230, 227);
+  color: rgb(29, 29, 29);
 }
 
 .input {
-    width: 100%;
-    padding: 5px 20px;
-    margin-bottom: 20px;
-    font-size: medium;
+  width: 100%;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  font-size: medium;
 }
 
 .add-score-form {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;      
-} 
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 
 @media screen and (min-width: 768px) {
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    .flex-column {
-        width: 50%;
-    }
+  .flex-column {
+    width: 50%;
+  }
 
-    .add-score-form {
-        margin-left: 15%;
-    }
+  .add-score-form {
+    margin-left: 15%;
+  }
 }
