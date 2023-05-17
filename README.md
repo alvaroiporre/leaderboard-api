@@ -28,7 +28,7 @@
 - [📝 License](#license)
 
 
-# 📖 To Do List <a name="about-project"></a>
+# 📖 Leaderboard project <a name="about-project"></a>
 
 **Leaderboard** is a is a brief sample of the work done in my career as a software developer.
 
@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 ```git clone https://github.com/alvaroiporre/leaderboard-api```
 ### Install
-```cd ToDolist```
+```cd leaderboard-api```
 ### Usage
 Ready for use it.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
