@@ -14,24 +14,19 @@
       <section class="recent-scores flex-column">
         <div class="flex-row">
           <h2>Recent scores</h2>
-          <a href="#" class="button">Refresh</a>
+          <a id="refresh" class="button">Refresh</a>
         </div>
         <ul class="score-list">
-          <li class="li-0"><p>Name: 100</p></li>
-          <li class="li-1"><p>Name: 100</p></li>
-          <li class="li-0"><p>Name: 100</p></li>
-          <li class="li-1"><p>Name: 100</p></li>
-          <li class="li-0"><p>Name: 100</p></li>
-          <li class="li-1"><p>Name: 100</p></li>
+  
         </ul>
       </section>
 
       <section class="add-score flex-column">
         <h2>Add your score</h2>
         <form action="#" class="add-score-form">
-          <input class="input" type="text" placeholder="Your name" id="name-input">
-          <input class="input" type="number" placeholder="Your score" id="score-input">
-          <input class="button button-form"type="submit" value="Submit" class="button">
+          <input class="input" type="text" placeholder="Your name" id="name-input" required>
+          <input class="input" type="number" placeholder="Your score" id="score-input" required>
+          <input class="button button-form" type="submit" value="Submit" id="button-form">
         </form>
       </section>
     </main>
