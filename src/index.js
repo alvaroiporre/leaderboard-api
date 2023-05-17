@@ -2,14 +2,16 @@ import './index.css';
 
 let data = [];
 
+const user = window.document.getElementById('name-input');
+const score = window.document.getElementById('score-input');
+const scoresList = window.document.querySelector('.score-list');
+
 window.document.getElementById("refresh").addEventListener('click', () => {
   getScore();
 });
 
 window.document.getElementById('button-form').addEventListener('click', () => {
-  const user = window.document.getElementById('name-input').value;
-  const score = window.document.getElementById('score-input').value;
-  addScore(user, score);
+  addScore(user.value, score.value);
 });
 
 const getScore = async () => {
@@ -17,16 +19,19 @@ const getScore = async () => {
     .then((response) => response.json())
     .then((json) => {
       data = json.result;
-      console.log(data)
+      scoresList.innerHTML = '';
+      data.forEach((dat, index) => {
+        scoresList.innerHTML += `<li class="li-${index % 2}"><p>${dat.user}: ${dat.score}</p></li>`;
+      });
     });
 }
 
-const addScore = async (user, score) => {
+const addScore = async (userAdd, scoreAdd) => {
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Pj6OOuAoNFLnlMr5reNl/scores', {
     method: 'POST',
     body: JSON.stringify({
-      "user": user,
-      "score": Number(score),
+      "user": userAdd,
+      "score": Number(scoreAdd),
     }),
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +39,11 @@ const addScore = async (user, score) => {
   })
     .then((response) => response.json())
     .then((json) => {
-      if(json.response === 'Leaderboard score created correctly.') getScore()
+      if (json.response === 'Leaderboard score created correctly.') {
+        getScore();
+      }
+      user.value = '';
+      score.value = '';
     });
 };
 
